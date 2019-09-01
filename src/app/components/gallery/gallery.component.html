@@ -1,0 +1,6 @@
+<div class="row imagetiles" *ngIf="gallery">
+  <div *ngFor="let photo of gallery.results" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <ug-photo [url]="photo.preview_photos[0].urls.regular">
+    </ug-photo>
+  </div>
+</div>

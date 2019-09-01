@@ -1,0 +1,9 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg">
+      <input #term type="text"
+      (keyup)="queryDone.emit(term.value)"
+      class="form-control mr-sm-2" placeholder="Search">
+    </form>
+  </div>
+</nav>

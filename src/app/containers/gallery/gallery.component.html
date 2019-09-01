@@ -1,0 +1,5 @@
+<ug-search (queryDone)="searchGallery($event)"></ug-search>
+<div class="container"  infiniteScroll (scrolled)="onScrollDown()">
+      <ug-gallery [gallery]="gallery"
+      ></ug-gallery>
+</div>
